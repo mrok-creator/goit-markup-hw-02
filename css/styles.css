@@ -19,8 +19,11 @@ body {
   color: var(--text-primary-color);
 }
 
-footer {
+.footer {
   background-color: var(--secondary-bg-color);
+}
+
+.footer-adress a {
   color: var(--primary-white-color);
 }
 
@@ -41,12 +44,12 @@ footer {
 }
 
 .btn-primary:hover,
-.btn-primary:active {
+.btn-primary:focus {
   color: var(--text-secondary-color);
 }
 
 .btn-secondary:hover,
-.btn-secondary:active {
+.btn-secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -65,7 +68,7 @@ footer {
 }
 
 .logo:hover,
-.logo:active {
+.logo:focus {
   color: var(--accent-color);
 }
 
@@ -74,8 +77,8 @@ footer {
   color: var(--text-secondary-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:active {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
@@ -84,7 +87,7 @@ footer {
 }
 
 .site-nav .current-link:hover,
-.site-nav .current-link:active {
+.site-nav .current-link:focus {
   color: var(--secondary-bg-color);
 }
 
@@ -93,12 +96,8 @@ footer {
   color: var(--text-secondary-color);
 }
 
-.contacts.footer > a {
-  color: var(--primary-white-color);
-}
-
 .contacts a:hover,
-.contacts a:active {
+.contacts a:focus {
   color: var(--accent-color);
 }
 
