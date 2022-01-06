@@ -20,12 +20,11 @@ body {
 
 /* logo */
 
-.logo span {
-  color: var(--text-secondary-color);
-}
-
-.logo.primary {
+.logo-primary {
   color: var(--accent-color);
+}
+.logo-secondary {
+  color: var(--text-secondary-color);
 }
 
 .logo:hover,
@@ -50,4 +49,13 @@ body {
 .site-nav .current-link:hover,
 .site-nav .current-link:active {
   color: var(--secondary-bg-color);
+}
+
+/* contacts */
+.contacts a {
+  color: var(--text-secondary-color);
+}
+.contacts a:hover,
+.contacts a:active {
+  color: var(--accent-color);
 }
