@@ -1,0 +1,53 @@
+/* text primary color #757575*/
+/* text secondary #212121 */
+/* primary white color #FFFFFF */
+/* secondary bg color #2F303A */
+/* logo color #000000, #2196F3 */
+/* team bg color #F5F4FA  */
+:root {
+  --primary-white-color: #ffffff;
+  --secondary-white-color: #f5f4fa;
+  --secondary-bg-color: #2f303a;
+  --text-primary-color: #757575;
+  --text-secondary-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--text-primary-color);
+}
+
+/* logo */
+
+.logo span {
+  color: var(--text-secondary-color);
+}
+
+.logo.primary {
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:active {
+  color: var(--accent-color);
+}
+
+/* nav */
+.site-nav .link {
+  color: var(--text-secondary-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:active {
+  color: var(--accent-color);
+}
+
+.site-nav .current-link {
+  color: var(--accent-color);
+}
+
+.site-nav .current-link:hover,
+.site-nav .current-link:active {
+  color: var(--secondary-bg-color);
+}
