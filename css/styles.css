@@ -12,11 +12,32 @@
   --text-primary-color: #757575;
   --text-secondary-color: #212121;
   --accent-color: #2196f3;
+  --decoration-white-color: rgba(255, 255, 255, 0, 6);
 }
 
 /* lists style */
 .list {
   list-style: none;
+}
+
+/* link decoration */
+.link {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.current-link {
+  color: var(--accent-color);
+}
+
+.current-link:hover,
+.current-link:focus {
+  color: var(--secondary-bg-color);
 }
 
 /* button */
@@ -67,24 +88,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.nav .link {
-  color: var(--text-secondary-color);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .current-link {
-  color: var(--accent-color);
-}
-
-.site-nav .current-link:hover,
-.site-nav .current-link:focus {
-  color: var(--secondary-bg-color);
 }
 
 /* logo */
@@ -198,6 +201,16 @@ body {
 .gallery {
   background-color: var(--prtf-bg-color);
 }
+
+.gallery .gallery-title {
+  color: var(--text-secondary-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 .gallery .btn-secondary {
   font-weight: 500;
   font-size: 16px;
@@ -227,9 +240,14 @@ footer {
   background-color: var(--secondary-bg-color);
 }
 
-.footer-adress .link {
-  color: var(--primary-white-color);
+.footer-contacts .link {
+  color: var(--decoration-white-color);
 
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-contacts .address.link {
+  color: var(--primary-white-color);
 }
